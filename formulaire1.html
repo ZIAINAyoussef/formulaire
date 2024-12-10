@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire d'inscription</title>
+  </head>
+  <body>
+    <h1>Formulaire d'inscription</h1>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Informations personnelles</legend>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required />
+
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required />
+
+        <label for="age">Âge :</label>
+        <input type="number" id="age" name="age" min="0" required />
+
+        <label>Sexe :</label>
+        <select name="sexe" required>
+          <option value="masculin">Masculin</option>
+          <option value="feminin">Féminin</option>
+          <option value="autre">Autre</option>
+        </select>
+
+        <label for="email">Adresse Mail :</label>
+        <input type="email" id="email" name="email" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Coordonnées</legend>
+        <label for="adresse">Adresse postale :</label>
+        <input type="text" id="adresse" name="adresse" required />
+
+        <label for="codePostal">Code postal :</label>
+        <input
+          type="text"
+          id="codePostal"
+          name="codePostal"
+          pattern="\d{5}"
+          title="Code postal à 5 chiffres"
+          required
+        />
+
+        <label for="ville">Ville :</label>
+        <input type="text" id="ville" name="ville" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Informations supplémentaires</legend>
+        <label for="metier">Métier exercé :</label>
+        <input type="text" id="metier" name="metier" required />
+
+        <label for="nationalite">Nationalité :</label>
+        <input type="text" id="nationalite" name="nationalite" required />
+
+        <label for="dateNaissance">Date de naissance :</label>
+        <input type="date" id="dateNaissance" name="dateNaissance" required />
+
+        <label for="paysNaissance">Pays de naissance :</label>
+        <input type="text" id="paysNaissance" name="paysNaissance" required />
+      </fieldset>
+
+      <fieldset>
+        <legend>Documents officiels</legend>
+        <label for="numSS">Numéro de sécurité sociale :</label>
+        <input
+          type="text"
+          id="numSS"
+          name="numSS"
+          pattern="\d{15}"
+          title="Numéro de sécurité sociale sur 15 chiffres"
+          required
+        />
+
+        <label for="numPasseport">Numéro du passeport :</label>
+        <input type="text" id="numPasseport" name="numPasseport" required />
+
+        <label for="dateDelivrancePasseport"
+          >Date de délivrance du passeport :</label
+        >
+        <input
+          type="date"
+          id="dateDelivrancePasseport"
+          name="dateDelivrancePasseport"
+          required
+        />
+
+        <label for="dateValiditePasseport"
+          >Date de validité du passeport :</label
+        >
+        <input
+          type="date"
+          id="dateValiditePasseport"
+          name="dateValiditePasseport"
+          required
+        />
+      </fieldset>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </body>
+</html>
