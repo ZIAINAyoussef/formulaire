@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prise de rendez-vous</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Prise de rendez-vous</h1>
+
+      <form action="a-propos.html" method="POST">
+        <fieldset>
+          <legend>Informations personnelles</legend>
+          <label for="name">Prénom :</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="lastname">Nom :</label>
+          <input type="text" id="lastname" name="lastname" required />
+
+          <label for="email">E-mail :</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="tel">Téléphone :</label>
+          <input type="tel" id="tel" name="tel" required />
+
+          <label for="formule">Choisir une formule :</label>
+          <select name="formule" id="formule" required>
+            <option value="Shootingpro">Shooting pro</option>
+            <option value="Shootingreg">Shooting</option>
+          </select>
+
+          <input type="submit" value="Envoyer" />
+        </fieldset>
+      </form>
+
+      <form>
+        <fieldset>
+          <legend>Enquête de Satisfaction</legend>
+          <p>
+            <input type="radio" name="result" id="result_bad" value="BAD" />
+            <label for="result_bad">Mauvais</label>
+          </p>
+          <p>
+            <input
+              type="radio"
+              name="result"
+              id="result_regular"
+              value="REGULAR"
+            />
+            <label for="result_regular">Moyen</label>
+          </p>
+          <p>
+            <input type="radio" name="result" id="result_good" value="GOOD" />
+            <label for="result_good">Bon</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <p>
+            <label for="agr1"
+              >Je suis d'accord avec les conditions d'utilisation et Politique
+              de Confidentialité</label
+            >
+            <input type="checkbox" id="agr1" name="agr1" value="1" />
+          </p>
+          <p>
+            <label for="agr2">Newsletter</label>
+            <input type="checkbox" id="agr2" name="agr2" value="2" />
+          </p>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
